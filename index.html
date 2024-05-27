@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minimalist</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--------------NAVIGATION------------->
+    <section>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="#"
+              ><img src="images/logo.webp" width="170" height="30"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="#">Hair Care</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="#">Skin Care</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="#">Track Order</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark me-1"
+                    ><i class="bi bi-heart-fill me-1" href="#"></i
+                  >Wishlist</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="#"
+                    ><i class="bi bi-bag me-1"></i
+                  >Cart</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <hr class="text-secondary mt-0 mb-5" />
+    <!----------HEADER---------->
+    <section id="header">
+      <div class="container">
+        <div class="card mb-3 border-0">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <!--new code-->
+              <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="images/product-img.avif"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/product-image2.avif"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/product-image3.avif"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <!--new code-->
+              <!-- <img
+                src="images/product-img.avif"
+                class="img-fluid rounded-start"
+                alt="..."
+              /> -->
+              <div class="container">
+                <div class="row mt-3">
+                  <div class="col-md-2 d-sm-none d-none d-md-block">
+                    <img
+                      src="images/product-img.avif"
+                      class="img-fluid"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-2 d-sm-none d-none d-md-block">
+                    <img
+                      src="images/product-image2.avif"
+                      class="img-fluid"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-2 d-sm-none d-none d-md-block">
+                    <img
+                      src="images/product-image3.avif"
+                      class="img-fluid"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 product-info">
+              <div class="card-body">
+                <h3 class="card-title display-5 fw-normal text-dark">
+                  SPF 50 Sunscreen
+                </h3>
+                <ul class="style-none d-flex p-0">
+                  <li><i class="bi bi-star-fill me-1"></i></li>
+                  <li><i class="bi bi-star-fill me-1"></i></li>
+                  <li><i class="bi bi-star-fill me-1"></i></li>
+                  <li><i class="bi bi-star-fill me-1"></i></li>
+                  <li><i class="bi bi-star-half me-1"></i></li>
+                  <li><p class="text-muted">(4.5)</p></li>
+                </ul>
+                <p class="card-text">
+                  A light weight, moisturiser-meets-sunscreen. This broad
+                  spectrum SPF 50 with PA++++ rating, has a very light texture
+                  that spreads easily & disappears leaving behind a natural,
+                  moisturised, non-shiny look. Loaded with Vitamins A, B, E & F
+                  that help repair skin and minimise damage caused by UV
+                  exposure.
+                </p>
+                <figure>
+                  <blockquote class="blockquote">
+                    <p class="text-muted fw-light fst-italic fs-6">
+                      "This is the best sunscreen I've come across to. It suits
+                      my skin well no whitecast no sticky feeling absorbs
+                      quickly."
+                    </p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer pt-1">
+                    <cite title="Source Title">Tanisha V</cite>
+                  </figcaption>
+                </figure>
+                <ul class="list-group list-group-horizontal flex-fill">
+                  <li class="list-group-item border-0 text-muted fs-6 ps-0">
+                    <i class="bi bi-check2"></i>
+                    <small>Fragrance free</small>
+                  </li>
+                  <li class="list-group-item border-0 text-muted fs-6 ps-0">
+                    <i class="bi bi-check2"></i>
+                    <small> Essential oil free</small>
+                  </li>
+                  <li class="list-group-item border-0 text-muted fs-6 ps-0">
+                    <i class="bi bi-check2"></i>
+                    <small>Non-comedogenic</small>
+                  </li>
+                </ul>
+                <div class="my-4 border position-relative p-4">
+                  <p
+                    class="text-uppercase position-absolute translate-middle-y top-0 start-0 mt-0 m-1 bg-white"
+                  >
+                    Price
+                  </p>
+                  <p class="m-0">
+                    MRP <del class="text-muted m-1"> ₹399 </del>
+                  </p>
+                  <p class="m-0 fs-3">₹398</p>
+                  <small class="m-0">you save ₹1</small>
+                </div>
+                <div class="d-grid gap-2">
+                  <button class="btn buy-now btn-dark" type="button">
+                    ADD TO CART
+                  </button>
+                </div>
+                <div
+                  class="accordion accordion-flush my-4"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        What makes it potent?
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <ul>
+                          <li>
+                            This sunscreen is formulated with 4 very effective
+                            UV-filters, namely, Uvinul T 150, Avobenzone,
+                            Octocrylene and Titanium Dioxide to provide
+                            protection from UVA & UVB
+                          </li>
+                          <li>
+                            Boosted with Vitamin A, B3, B5, E and F that not
+                            only repairs skin after sun exposure, but also
+                            soothes, nourishes and hydrates skin Thoroughly
+                            tested by an independent lab and confirmed SPF of 50
+                            was obtained
+                          </li>
+                          <li>
+                            It is a Photostable & Acne safe sunscreen that does
+                            not leave any white cast on application. Also, it
+                            spreads easily like a lightweight moisturiser and
+                            does not leave behind unwated residue or heavy
+                            feeling
+                          </li>
+                          <li>
+                            The primary filters are sourced from BASF, Germany
+                            and Royal DSM, Netherlands
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                      >
+                        Ideal for
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwo"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          <span class="fw-semibold">Skin type:</span>
+                          Dry/Normal, Sensitive, Oily/Combination, Acne-Prone
+                        </p>
+                        <p>
+                          <span class="fw-semibold">Concerns:</span> Sun
+                          protection, UV exposure / damage
+                        </p>
+                        <p>
+                          <span class="fw-semibold">Suitable for:</span> 16+
+                          years of age
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThree"
+                      >
+                        How to use?
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseThree"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Apply on cleansed face after all your serums and
+                        moisturisers. Apply generously & evenly on your face and
+                        neck. Apply sunscreen at least 15 minutes before sun
+                        exposure. For added protection, reapply in case of
+                        continued sun exposure, swimming, perspiring or towel
+                        drying.
+                        <p class="fw-semibold">When to use: AM. Everyday.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-4 border position-relative p-3">
+                  <p
+                    class="text-capitalize position-absolute translate-middle-y top-0 start-0 mt-0 m-1 bg-white"
+                  >
+                    Goes well with
+                  </p>
+                  <!-- <div class="container">
+                    <div class="row d-flex">
+                      <div class="col-md-4">
+                        <img
+                          src="images/mouisturizer.avif"
+                          alt="moisturiser"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <small class="card-text mb-4">
+                          ₹329
+                          <del class="text-body-secondary">₹350</del>
+                        </small>
+                        <h6 class="card-title">Vitamin B5 10% Mouisturizer</h6>
+                      </div>
+                    </div>
+                  </div> -->
+                  <div class="card border-0 m-0" style="max-height: 540px">
+                    <div class="row g-0">
+                      <div class="col-md-3">
+                        <img
+                          src="images/mouisturizer.avif"
+                          class="img-fluid rounded-start"
+                          alt="moisturizer image"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <small class="card-text mb-4">
+                            ₹329
+                            <del class="text-body-secondary">₹350</del>
+                          </small>
+                          <h6 class="card-title">
+                            Vitamin B5 10% Mouisturizer
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------SKIN SCIENCE------->
+    <section id="skin-science" class="my-3 d-sm-none d-none d-md-block">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <h3 class="text-capitalize text-center mb-3">
+            Dive into skin science
+          </h3>
+          <div class="col col-md-5">
+            <div class="card-group">
+              <div class="card mx-2 border-0">
+                <video
+                  src="images/video1.mp4"
+                  autoplay
+                  loop
+                  muted
+                  class="rounded"
+                ></video>
+              </div>
+              <div class="card mx-2 border-0">
+                <video
+                  src="images/video2.mp4"
+                  autoplay
+                  loop
+                  muted
+                  class="rounded"
+                ></video>
+              </div>
+              <div class="card mx-2 border-0">
+                <video
+                  src="images/video3.mp4"
+                  autoplay
+                  loop
+                  muted
+                  class="rounded"
+                ></video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------INGREDIENTS-------->
+    <section>
+      <div class="container my-5">
+        <div class="row mt-5">
+          <h3>Ingredients</h3>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapsefour"
+                  aria-expanded="false"
+                  aria-controls="flush-collapsefour"
+                >
+                  Avobenzone
+                </button>
+              </h2>
+              <div
+                id="flush-collapsefour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  The most popular UVA filter across the world and provides
+                  proper UVA protection
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapsefive"
+                  aria-expanded="false"
+                  aria-controls="flush-collapsefive"
+                >
+                  Octocrylene
+                </button>
+              </h2>
+              <div
+                id="flush-collapsefive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Protects the skin primarily from the UVB. Octocrylene is a
+                  very photostable filter and it further stabilizes Avobenzone
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapsesix"
+                  aria-expanded="false"
+                  aria-controls="flush-collapsesix"
+                >
+                  All Ingredients
+                </button>
+              </h2>
+              <div
+                id="flush-collapsesix"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Aqua, Octocrylene, Diisopropyl Adipate, Propylene Glycol
+                  Dicaprylate/Dicaprate, C12-15 Alkyl Benzoate, Diisopropyl
+                  Sebacate, Butyl Methoxydibenzoylmethane, Isododecane,
+                  Niacinamide, Arachidyl Alcohol, Behenyl Alcohol, Arachidyl
+                  Glucoside, Caprylic/Capric Triglyceride, Titanium Dioxide,
+                  Ethylhexyl Triazone, PEG-100 Stearate, Glyceryl Stearate,
+                  Butylene Glycol, Linoleic Acid, Linolenic Acid, Panthenol,
+                  Sodium Hyaluronate, Allantoin, Tocopherol Acetate, Retinol,
+                  Polysorbate 20, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl
+                  Taurate Copolymer, Xanthan Gum, Polyacrylate Crosspolymer-6,
+                  Silica, Acacia Gum, Phenoxyethanol, Ethylhexylglycerin,
+                  Trisodium Ethylenediamine Disuccinate
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------RECOMMEND-->
+    <section>
+      <div class="container my-3">
+        <h3 class="text-capitalize mb-4">Recommended products</h3>
+        <div class="row">
+          <div class="col">
+            <div class="row row-cols-1 row-cols-md-4 g-2">
+              <div class="col">
+                <div class="card border-0 h-100">
+                  <div id="carouselExample1" class="carousel slide">
+                    <div class="carousel-inner rounded">
+                      <div class="carousel-item active">
+                        <img
+                          src="images/img-1.avif"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="images/img-2.avif"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselExample1"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselExample1"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <div class="card-body ps-0">
+                    <h5 class="card-title text-capitalize">
+                      Salicylic Acid Cleanser
+                    </h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn buy-now btn-outline-dark text-capitalize">
+                        View Product
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0 h-100">
+                  <div id="carouselExample2" class="carousel slide">
+                    <div class="carousel-inner rounded">
+                      <div class="carousel-item active">
+                        <img
+                          src="images/img-3.avif"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="images/img-4.webp"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselExample2"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselExample2"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <div class="card-body ps-0">
+                    <h5 class="card-title text-capitalize">SPF 60 sunscreen</h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn buy-now btn-outline-dark text-capitalize">
+                        View Product
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0 h-100">
+                  <div id="carouselExample3" class="carousel slide">
+                    <div class="carousel-inner rounded">
+                      <div class="carousel-item active">
+                        <img
+                          src="images/img-5.avif"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="images/img-6.avif"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselExample3"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselExample3"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <div class="card-body ps-0">
+                    <h5 class="card-title text-capitalize">
+                      Vitamin B 10% moisturiser
+                    </h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn buy-now btn-outline-dark text-capitalize">
+                        View Product
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0 h-100">
+                  <div id="carouselExample4" class="carousel slide">
+                    <div class="carousel-inner rounded">
+                      <div class="carousel-item active">
+                        <img
+                          src="images/img-7.avif"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="images/img-8.avif"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselExample4"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselExample4"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <div class="card-body ps-0">
+                    <h5 class="card-title text-capitalize">
+                      Light fluid SPF 50
+                    </h5>
+                    <div class="d-grid gap-2">
+                      <button class="btn buy-now btn-outline-dark text-capitalize">
+                        View Product
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------CUSTOMER REVIEWS---->
+    <section>
+      <div class="container my-5 text-center">
+        <h5 class="text-capitalize mb-5">Customer reviews</h5>
+        <div class="row align-items-center justify-content-md-center">
+          <div class=" col-md-2 text-center">
+            <div class="row d-inline-block">
+              <ul class="style-none d-flex mb-0">
+              <li><i class="bi bi-star-fill me-1"></i></li>
+              <li><i class="bi bi-star-fill me-1"></i></li>
+              <li><i class="bi bi-star-fill me-1"></i></li>
+              <li><i class="bi bi-star-fill me-1"></i></li>
+              <li><i class="bi bi-star-half me-1"></i></li>
+            </ul> 
+            <p class="row mt-0 ps-4 text-center">658 reviews</p>
+          </div>
+          </div>
+    
+          <div class="review-border col-md-3 my-2 text-center">
+            <div class="progress mb-1" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-success" style="width: 80%"><i class="bi bi-star-fill">5</i></div>
+            </div>
+            <div class="progress mb-1" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-success" style="width: 60%"><i class="bi bi-star-fill">4</i></div>
+            </div>
+            <div class="progress mb-1" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-warning" style="width: 30%"><i class="bi bi-star-fill">3</i></div>
+            </div>
+            <div class="progress mb-1" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-warning" style="width: 7%"><i class="bi bi-star-fill">2</i></div>
+            </div>
+            <div class="progress mb-1" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar  bg-danger" style="width: 10%"><i class="bi bi-star-fill ">1</i></div>
+            </div>
+          </div>
+
+          <div class="col-md-2 ms-3">
+            <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="You need to make a purchase before writing review">
+              <button class="btn btn-dark text-white text-capitalize btn-sm" type="button">Write a Review</button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+     
+    <!-------FOOTER------>
+    <section id="footer">
+      <div class="container-fluid pt-5 pb-4 bg-dark text-white">
+        <div class="row">
+          <div class="col-md-6">
+            <ul>
+              <li class="style-none fw-semibold mb-2">About Us</li>
+              <li class="style-none">Our values</li>
+              <li class="style-none">Terms & conditions</li>
+              <li class="style-none">Disclaimer</li>
+              <li class="style-none">Corporate Information</li>
+            </ul>
+          </div>
+          <div class="col-md-6 ps-5">
+            <h5>Contact Us</h5>
+            <p>
+              Need help fast? Fill out our form or email help@beminimalist.co
+            </p>
+            <div class="icons ">
+              <a href="#" target="_blank"
+                ><i class="bi bi-browser-chrome text-white mx-2"></i
+              ></a>
+              <a href="mailto:mahamayamallya4@gmail.com" target="_blank"
+                ><i class="bi bi-envelope-fill text-white mx-2"></i></i
+              ></a>
+              <a href="#" target="_blank"
+                ><i class="bi bi-instagram text-white mx-2"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid fixed-bottom">
+        <button type="button" class=" btn btn-dark text-white px-4 py-3 position-relative">
+          <i class="bi bi-gift-fill">Offers</i>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            1
+            <span class="visually-hidden">unread messages</span>
+          </span>
+        </button>
+        <div class="row">
+          <button class="btn btn-dark text-white text-capitalize buy-now p-2">buy now</button>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
